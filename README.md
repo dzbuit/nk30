@@ -1,16 +1,28 @@
 # nk30
 
-Hybrid Hangul + Hanja numeral system (base-30,000)
+✨ One-function Hangul/Hanja encoder/decoder in base-30000.
+
+## Install
 
 ```bash
-pip install kn30
+pip install nk30
 ```
+
+## Usage
 
 ```python
 import nk30
 
-encoded = nk30.encode_nk30(123456)
-decoded = nk30.decode_nk30(encoded)
+nk30(123456)     # → 문자
+nk30('문자')     # → 123456
 ```
 
-> Powered by `kn30` core.
+## Concept
+
+- Pass `int` → returns 30KN Hangul/Hanja string.
+- Pass `str` → returns original integer.
+- That's it. Minimal and elegant.
+
+## License
+
+MIT
